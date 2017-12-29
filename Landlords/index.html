@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>斗地主</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" type="text/css" href="css/popup.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="./js/fragment.js"></script>
+	<script type="text/javascript" src="./js/open ani.js"></script>
+	<script type="text/javascript" src="./js/index.js"></script>
+
+</head>
+<body class="">
+<!-- <div class="popup-container">
+	<div class="img-flex"></div>
+</div>
+<div class="a1 "></div> -->
+<!-- 开门动画开始 -->
+
+	<div class="sho"></div>
+	<div class="poker"></div>
+<div class="ceng"></div>
+<!-- 开门动画结束 -->
+
+<!--结束动画开始-->
+<div class=" over">
+	<div class=" over_2"><img src="images/win.gif" alt=""></div>
+	<div class="over_3">
+		<ul>
+			<li><input class="result" type="text" value="农民胜"></li>
+			<li>
+				<ul class="multiple">
+					<li>初始 <span>X1</span></li>
+					<li>明牌 <span>X1</span></li>
+					<li>抢地主 <span>X1</span></li>
+					<li>春天 <span>X1</span></li>
+					<li>炸弹 <span>X1</span></li>
+					<li>总倍数 <span>X1</span></li>
+				</ul>
+			</li>
+			<ul class="integral">
+				<li>
+					<span>柯南</span>
+					<span>不加倍</span>
+					<span class="add">0</span>
+				</li>
+				<li>
+					<span>小灰</span>
+					<span>不加倍</span>
+					<span class="add">0</span>
+				</li>
+				<li>
+					<span>小兰</span>
+					<span>不加倍</span>
+					<span class="add">0</span>
+				</li>
+			</ul>
+			<li class="count_button">
+				<input id="close" type="button" value="休息一下">
+				<input id="continue" type="button" value="点击继续">
+			</li>
+		</ul>
+	</div>
+</div>
+<!--结束动画结束-->
+<div class="top">
+	<div class="score">
+		<ul>
+			<li>
+				<span>倍数</span>
+				<span>积分</span>
+			</li>
+			<li>
+				<span>柯南</span>
+				<i>
+					<input type="text" readonly="true" class="mom" value="1">
+					<input type="text" readonly="true" class="grade" value="100">
+				</i>
+			</li>
+			<li>
+				<span>小灰</span>
+				<i>
+					<input type="text" readonly="true" class="mom" value="1">
+					<input type="text" readonly="true" class="grade" value="100">
+				</i>
+
+			</li>
+			<li>
+				<span>小兰</span>
+				<i>
+					<input type="text" readonly="true" class="mom" value="1">
+					<input type="text" readonly="true" class="grade" value="100">
+				</i>
+			</li>
+		</ul>
+	</div>
+	<div class="three_poker"></div>
+
+</div>
+<div class="left">
+	<div class="alarm left_alarm"></div>
+	<span class="name"></span>
+	<input class="mingpai" type="botton" readonly="true" value="明牌">
+	<div class="player1_portrait"></div>
+	<div class="player1_poker"></div>
+
+	<div class="button_container left_button">
+		<input class="clock call_clock" type="text" type="button" value="30">
+		<input class="button land_grab" type="button" value="叫地主">
+		<input class="button not_call" type="button" value="不叫">
+	</div>
+	<div class="play_event left_play_event">
+		<input class="clock play_clock" type="text" type="button" value="30">
+		<input type="button" value="出牌" class=" button play">
+		<input type="button" value="不出" class=" button no_play">
+		<input type="button" value="提示" class="button hint">
+	</div>
+
+</div>
+<div class="center">
+	<div class="mid_top">
+		<ul class="all_poker"></ul>
+	</div>
+</div>
+<div class="bottom">
+	<div class="alarm bottom_alarm"></div>
+	<span class="name"></span>
+	<input class="mingpai" type="botton" readonly="true" value="明牌">
+	<div class="player2_portrait"></div>
+	<div class="player2_poker"></div>
+
+	<div class="button_container bottom_button">
+		<input class="clock call_clock" type="text" type="button" value="30">
+		<input class="button land_grab" type="button" value="叫地主">
+		<input class="button not_call" type="button" value="不叫">
+	</div>
+	<div class="play_event  bottom_play_event">
+		<input class="clock play_clock" type="text" type="button" value="30">
+		<input type="button" value="出牌" class=" button play">
+		<input type="button" value="不出" class=" button no_play">
+		<input type="button" value="提示" class="button hint">
+	</div>
+</div>
+
+<div class="right">
+	<div class="alarm right_alarm"></div>
+	<span class="name"></span>
+	<input class="mingpai" type="botton" readonly="true" value="明牌">
+	<div class="player3_portrait"></div>
+	<ul class="player3_poker"></ul>
+
+	<div class="button_container right_button">
+		<input class="clock call_clock" type="text" type="button" value="30">
+		<input class="button land_grab" type="button" value="叫地主">
+		<input class="button not_call" type="button" value="不叫">
+	</div>
+	<div class="play_event right_play_event">
+		<input class="clock play_clock" type="text" type="button" value="30">
+		<input type="button" value="出牌" class=" button play">
+		<input type="button" value="不出" class=" button no_play">
+		<input type="button" value="提示" class="button hint">
+	</div>
+</div>
+<div class="booo"></div>
+<div class="bos"></div>
+<div class="bbj"></div>
+<div class="sz">
+	<img src="./images/022.gif" alt="">
+</div>
+<div class="yh yinghua"></div>
+<audio id="ado" src="" loop="loop" autoplay="autoplay"></audio>
+<audio id="boom" src="./audio/8923.wav" loop="loop" autoplay="autoplay"></audio>
+</body>
+<script>
+
+    var poker={
+        $mid_top:$('.mid_top'),
+        $all_poker:$('.all_poker'),
+        $back:$('.back'),
+        $alarm:$('.alarm'),
+        $mingpai:$('.mingpai'),
+        $all_poker_li:$('.all_poker li'),
+        $play1_poker:$('.player1_poker'),
+        $play1_poker_li:$('.player1_poker li'),
+        $play2_poker:$('.player2_poker'),
+        $play2_poker_li:$('.player2_poker li'),
+        $play3_poker:$('.player3_poker'),
+        $play3_poker_li:$('.player3_poker li'),
+        $three_poker:$('.three_poker'),
+        $three_poker_li:$('.three_poker li'),
+        $right:$('.right'),
+        $left:$('.left'),
+        $play:$('.play'),
+        $no_play:$('.no_play'),
+        $land_grab:$('.land_grab'),
+        $not_call:$('.not_call'),
+        $left_name:$('.left .name'),
+        $bottom_name:$('.bottom .name'),
+        $right_name:$('.right .name'),
+        $button_container:$('.button_container'),
+        $play_event:$('.play_event'),
+        $a1:$('.a1'),
+        $bottom:$('.bottom'),
+        $over:$('.over'),
+        $mom:$('.mom'),
+        $add:$('.add'),
+        $ado:$('#ado')
+    }
+$('.sho').each(function(){
+	new PlaceFieldEditor($(this));
+
+});
+$('.poker').each(function(){
+	new Play_poker($(this));
+});
+
+    new LandLoads(poker)
+</script>
+</html>

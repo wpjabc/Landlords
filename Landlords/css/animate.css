@@ -1,0 +1,47 @@
+		.list{
+			position:absolute;
+			width:125px;
+			height: 175px;
+
+		}
+		.asd{
+			position:absolute;
+			width:80px;
+			height: 120px;
+		}
+		.out{
+			/*background: url(./images/14.png) -87px -225px;*/
+			animation-timing-function: ease-in;
+			animation-duration: 225ms;
+		}
+		}
+		.in{
+			/*background:url('./images/14.png') -162px -5px;	*/
+			animation-timing-function: ease-out;
+			animation-duration: 350ms;
+		}
+		.flip{
+			
+			backface-visibility: hidden;
+			transform: translateX(0);
+		}
+		.flip.out{
+			/*background: url(./images/14.png) -87px -225px;*/
+			transform: rotateY(-90deg);
+			animation-name: flipouttoleft;
+			animation-duration: 175ms;
+		}
+		.flip.in{
+			/*background:url('./images/14.png') -162px -5px;*/
+			/*transform: rotateY(90deg);*/
+			animation-name: flipintoright;
+			animation-duration: 225ms;
+		}
+@keyframes flipouttoleft {
+    from { transform: rotateY(0deg); }
+    to { transform: rotateY(-90deg); }
+}
+@keyframes flipintoright {
+    from {  transform: rotateY(90deg);}
+    to { transform: rotateY(0deg); }
+}
